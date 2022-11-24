@@ -78,7 +78,7 @@ let products = [
         id: 1009,
         subject: "Law Course",
         Price: 2000,
-        Image: "images/language.jfif",
+        Image: "images/law.jpg",
         space: 10,
         location: "Dubai",
     },
