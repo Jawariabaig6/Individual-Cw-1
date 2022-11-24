@@ -23,19 +23,29 @@
             </button>
 
             <!-- adding radio button -->
-            <input type="radio" id="html" name="order" value="ascending" v-model="order" v-bind:value="'ascending'"
-                checked>
-            <label for="ascending">Ascending</label><br>
-            <input type="radio" id="html" name="order" value="descending" v-model="order" v-bind:value="'descending'">
-            <label for="descending">Descending</label><br>
-            <input type="radio" id="html" name="sort" value="subject" v-model="sort" v-bind:value="'subject'" checked>
-            <label for="subject">Subject</label><br>
-            <input type="radio" id="html" name="sort" value="location" v-model="sort" v-bind:value="'location'">
-            <label for="location">Location</label><br>
-            <input type="radio" id="html" name="sort" value="price" v-model="sort" v-bind:value="'price'">
-            <label for="price">Price</label><br>
-            <input type="radio" id="html" name="sort" value="space" v-model="sort" v-bind:value="'space'">
-            <label for="space">Available Spaces</label><br>
+            <div>
+                    <input type="radio" id="html" name="order" value="ascending" v-model="order" v-bind:value="'ascending'"
+                    checked>
+                <label for="ascending">Ascending</label><br>
+                <input type="radio" id="html" name="order" value="descending" v-model="order"
+                    v-bind:value="'descending'">
+                <label for="descending">Descending</label><br>
+               
+            </div>
+            <hr>
+            <div>
+                <input type="radio" id="html" name="sort" value="subject" v-model="sort" v-bind:value="'subject'"
+                    checked>
+                <label for="subject">Subject</label><br>
+                <input type="radio" id="html" name="sort" value="location" v-model="sort" v-bind:value="'location'">
+                <label for="location">Location</label><br>
+                <input type="radio" id="html" name="sort" value="price" v-model="sort" v-bind:value="'price'">
+                <label for="price">Price</label><br>
+                <input type="radio" id="html" name="sort" value="space" v-model="sort" v-bind:value="'space'">
+                <label for="space">Available Spaces</label><br>
+            </div>
+
+
         </header>
         <main>
 
