@@ -23,7 +23,7 @@ let products = [
 
         id: 1003,
         subject: "Language Course",
-        Price: 2000,
+        Price: 3000,
         Image: "images/language.jfif",
         space: 10,
         location: "Sharjah",
@@ -32,7 +32,7 @@ let products = [
 
         id: 1004,
         subject: "SocialStudies Course",
-        Price: 2000,
+        Price: 4500,
         Image: "images/social.jfif",
         space: 10,
         location: "Fujairah",
@@ -41,7 +41,7 @@ let products = [
 
         id: 1005,
         subject: "Freelancing Course",
-        Price: 2000,
+        Price: 1000,
         Image: "images/freelncing.png",
         space: 10,
         location: "Sharjah",
@@ -50,7 +50,7 @@ let products = [
 
         id: 1006,
         subject: "Robotics Course",
-        Price: 2000,
+        Price: 3500,
         Image: "images/robotics.jpg",
         space: 10,
         location: "Abu Dhabi",
@@ -68,7 +68,7 @@ let products = [
 
         id: 1008,
         subject: "Math Course",
-        Price: 2000,
+        Price: 1500,
         Image: "images/dance class.jpg",
         space: 10,
         location: "Ajman",
@@ -77,7 +77,7 @@ let products = [
 
         id: 1009,
         subject: "Law Course",
-        Price: 2000,
+        Price: 1200,
         Image: "images/law.jpg",
         space: 10,
         location: "Dubai",
@@ -86,7 +86,7 @@ let products = [
 
         id: 1010,
         subject: "Reserch Course",
-        Price: 2000,
+        Price: 1800,
         Image: "images/research.jpg",
         space: 10,
         location: "Ajman",
