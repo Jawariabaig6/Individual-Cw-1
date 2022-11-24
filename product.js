@@ -14,7 +14,7 @@ let products = [
 
         id: 1002,
         subject: "Dance Course",
-        Price: 2000,
+        Price: 2500,
         Image: "images/dance class.jpg",
         space: 10,
         location: "Abu Dhabi",
