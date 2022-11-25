@@ -24,13 +24,13 @@
 
             <!-- adding radio button -->
             <div>
-                    <input type="radio" id="html" name="order" value="ascending" v-model="order" v-bind:value="'ascending'"
+                <input type="radio" id="html" name="order" value="ascending" v-model="order" v-bind:value="'ascending'"
                     checked>
                 <label for="ascending">Ascending</label><br>
                 <input type="radio" id="html" name="order" value="descending" v-model="order"
                     v-bind:value="'descending'">
                 <label for="descending">Descending</label><br>
-               
+
             </div>
             <hr>
             <div>
@@ -44,11 +44,8 @@
                 <input type="radio" id="html" name="sort" value="space" v-model="sort" v-bind:value="'space'">
                 <label for="space">Available Spaces</label><br>
             </div>
-
-
         </header>
         <main>
-
             <div v-if="checkSearchBar">
                 <div v-for="(products, index) in ProductList" :key="index">
                     <!-- classes information  -->
@@ -65,8 +62,6 @@
 
                         </button>
                         <button disabled="disabled" v-else>Add to cart</button>
-
-
                     </fieldset>
                 </div>
             </div>
@@ -75,6 +70,7 @@
                     <div v-for="product in Sort">
 
                         <!-- classes information  -->
+
                         <fieldset>
                             <img v-bind:src="product.Image" alt="" height="100px" width="200px" />
                             <h2 v-text="product.subject"></h2>
@@ -82,6 +78,7 @@
                             <p>Price: {{ product.Price }}</p>
                             <p>Space:{{ product.space }}</p>
                             <!-- add to cart button  -->
+
                             <button v-on:click="addToCart(product)" v-if="canAddToCart(product)">
                                 Add to cart
                                 <i class="fas fa-shopping-cart"></i>
@@ -96,6 +93,7 @@
                     <div v-for="product in cart">
 
                         <!-- classes information  -->
+
                         <fieldset>
                             <img v-bind:src="product.Image" alt="" height="100px" width="200px" />
                             <h2 v-text="product.subject"></h2>
@@ -128,9 +126,6 @@
                             <i class="fas fa-shopping-cart"></i>
                         </button>
                     </p>
-
-
-
                 </div>
             </div>
         </main>
@@ -149,9 +144,8 @@
                 name: "",
                 phone: "",
                 order: "ascending",
-                sort: "subject"
-
-            },
+                sort: "subject" },
+                // Methods start
             methods: {
                 addToCart: function () {
                     if (this.products.spaces > 0) {
@@ -205,12 +199,7 @@
                     }
 
                 },
-
-
-
-
-
-
+                // computed methods 
             },
             computed:
             {
