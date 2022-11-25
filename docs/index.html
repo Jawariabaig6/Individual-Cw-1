@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>PetDecode</title>
+    <title>Lessons</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -80,7 +80,6 @@
                             <h2 v-text="product.subject"></h2>
                             <p v-text="product.location"></p>
                             <p>Price: {{ product.Price }}</p>
-
                             <p>Space:{{ product.space }}</p>
                             <!-- add to cart button  -->
                             <button v-on:click="addToCart(product)" v-if="canAddToCart(product)">
@@ -89,14 +88,10 @@
 
                             </button>
                             <button disabled="disabled" v-else>Add to cart</button>
-
-
                         </fieldset>
-
                     </div>
                 </div>
                 <div v-else class="checkout">
-
                     <h2>CheckOut Page</h2>
                     <div v-for="product in cart">
 
@@ -106,7 +101,6 @@
                             <h2 v-text="product.subject"></h2>
                             <p v-text="product.location"></p>
                             <p>Price: {{ product.Price }}</p>
-
 
                             <!-- add to cart button  -->
                             <button v-on:click="remove(product.id)">
